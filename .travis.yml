@@ -9,7 +9,7 @@ install:
 script:
 - npm run verify
 after_success:
-- curl -sSL https://raw.githubusercontent.com/RedHatInsights/insights-frontend-builder-common/master/src/bootstrap.sh | bash -s
+- curl -sSL https://raw.githubusercontent.com/chambridge/insights-frontend-builder-common/send-slack-notification-on-deployment/src/bootstrap.sh | bash -s
 env:
   global:
   - REPO="git@github.com:RedHatInsights/insights-dashboard-build"
